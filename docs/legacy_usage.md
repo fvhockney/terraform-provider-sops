@@ -3,12 +3,12 @@
 To migrate a state from Terraform 0.12 or older, there is a need to change how the provider is referenced. Terraform provides a command to do this migration:
 
 ```shell
-terraform state replace-provider registry.terraform.io/-/sops registry.terraform.io/carlpett/sops
+terraform state replace-provider registry.terraform.io/-/sops registry.terraform.io/fvhockney/sops
 ```
 
 ## Installation
 
-Download the latest [release](https://github.com/carlpett/terraform-provider-sops/releases) for your environment and unpack it to the user plugin directory. The user plugins directory is in one of the following locations, depending on the host operating system:
+Download the latest [release](https://github.com/fvhockney/terraform-provider-sops/releases) for your environment and unpack it to the user plugin directory. The user plugins directory is in one of the following locations, depending on the host operating system:
 * Windows `%APPDATA%\terraform.d\plugins`
 * All other systems `~/.terraform.d/plugins`
 

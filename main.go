@@ -7,7 +7,7 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
 
-	"github.com/carlpett/terraform-provider-sops/sops"
+	"github.com/fvhockney/terraform-provider-sops/sops"
 )
 
 func main() {
@@ -17,7 +17,7 @@ func main() {
 	flag.Parse()
 
 	opts := providerserver.ServeOpts{
-		Address: "registry.terraform.io/carlpett/sops",
+		Address: "registry.terraform.io/fvhockney/sops",
 		Debug:   debug,
 	}
 

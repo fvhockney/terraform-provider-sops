@@ -22,7 +22,7 @@ Encrypt a file using Sops: `sops demo-secret.enc.json`
 terraform {
   required_providers {
     sops = {
-      source = "carlpett/sops"
+      source = "fvhockney/sops"
       version = "~> 0.5"
     }
   }
@@ -70,7 +70,7 @@ For use with reading files that might not be local.
 terraform {
   required_providers {
     sops = {
-      source = "carlpett/sops"
+      source = "fvhockney/sops"
       version = "~> 0.5"
     }
   }
@@ -104,7 +104,7 @@ For Terraform 0.13 and later, specify the source and version in a `required_prov
 terraform {
   required_providers {
     sops = {
-      source = "carlpett/sops"
+      source = "fvhockney/sops"
       version = "~> 0.5"
     }
   }
@@ -122,13 +122,13 @@ The PGP key used for encrypting the test cases is found in `test/testing-key.pgp
 
 ## Transitioning to Terraform 0.13 provider required blocks.
 
-With Terraform 0.13, providers are available/downloaded via the [terraform registry](https://registry.terraform.io/providers/carlpett/sops/latest) via a required_providers block.
+With Terraform 0.13, providers are available/downloaded via the [terraform registry](https://registry.terraform.io/providers/fvhockney/sops/latest) via a required_providers block.
 
 ```hcl
 terraform {
   required_providers {
     sops = {
-      source = "carlpett/sops"
+      source = "fvhockney/sops"
       version = "~> 0.5"
     }
   }
@@ -138,7 +138,7 @@ terraform {
 A prerequisite when converting is that you must remove the data source block from the previous SOPS provider in your `terraform.state` file. 
 This can be done via:
 ```shell
-terraform state replace-provider registry.terraform.io/-/sops registry.terraform.io/carlpett/sops
+terraform state replace-provider registry.terraform.io/-/sops registry.terraform.io/fvhockney/sops
 ```
 
 If not you will be greeted with: 
