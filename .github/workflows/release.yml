@@ -38,6 +38,6 @@ jobs:
         run: make crossbuild
 
       - name: Release
-        run: make release
+        run: make releases
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -34,7 +34,7 @@ $(GOPATH)/bin/gox:
 	@go install github.com/mitchellh/gox@latest
 
 # This uses the `gh` tool, which is preinstalled on GitHub Actions runners.
-release: crossbuild
+releases: crossbuild
 	@echo ">> uploading release $(VERSION)"
 	mkdir -p releases
 	set -e; for OSARCH in $(OSARCH_COMBOS); do \
